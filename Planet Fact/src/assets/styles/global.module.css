@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio&family=League+Spartan&family=Mukta:wght@200;300;400&display=swap');
+:root{
+    --mercury-color: #409DBA;
+    --venus-color:   #ECA149;
+    --earth-color:   #6F2ED5;
+    --mars-color:    #CF4B32;
+    --jupiter-color: #D63A34;
+    --saturn-color:  #CD5120;
+    --uranus-color:  #1EC2A4;
+    --neptune-color: #2D68F0;
+
+    --font-antonio: 'Antonio', sans-serif;
+    --font-spartan: 'Spartan', sans-serif;
+    --font-mukta: 'Mukta', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-mukta);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #070724;
+    background-image: url('../images/background-stars.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
