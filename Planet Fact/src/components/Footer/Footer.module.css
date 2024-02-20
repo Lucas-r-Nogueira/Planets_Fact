@@ -1,0 +1,21 @@
+.footer{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p:first-child{
+    margin-bottom: 5px;
+}
+
+
+.footer p{
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #818193;
+}
+
+.footer p a{
+    color: #818193;
+    /* text-decoration: none; */
+}

@@ -1,10 +1,16 @@
+import React from 'react';
 import style from './PlanetImage.module.css'
-import Planet from '../../assets/images/planet-earth.svg'
-export default function PlanetImage(){
+export default function PlanetImage(props){
+    const [img, setImg] = React.useState(null);
+
+    React.useEffect(() => {
+        props.planetImg.then((img) => setImg(img));
+    }, [props.planetImg]);
+
     return (
         <>
             <div className={style.container__planetImage}>
-                <img src={Planet} />
+                <img src={img} alt={`Planet ${props.planetName}`}/>
             </div>
         </>
     );

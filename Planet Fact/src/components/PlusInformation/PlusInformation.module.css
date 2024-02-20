@@ -1,0 +1,30 @@
+.container__plusInformation{
+    width: 70%;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container__info{
+    width: 270px;
+    height: 130px;
+    outline: 1px solid #38384F;
+    padding: 20px 0 35px 23px;
+}
+
+.container__info p:first-child{
+    color: #838391;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.container__info p:nth-child(2){
+    color: #ffff;
+    font-size: 40px;
+    font-family: var(--font-antonio);
+    text-transform: uppercase;
+}

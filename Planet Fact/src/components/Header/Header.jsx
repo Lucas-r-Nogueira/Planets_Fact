@@ -1,5 +1,8 @@
 import styles from "./Header.module.css";
-export default function Header() {
+
+
+
+export default function Header(props) {
 
   return (
     <>
@@ -16,7 +19,7 @@ export default function Header() {
               <a href="">Venus</a>
             </li>
             <li>
-              <a href="">Earth</a>
+              <a >Earth</a>
             </li>
             <li>
               <a href="">Mars</a>

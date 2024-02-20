@@ -1,6 +1,4 @@
 .container__planetImage{
-    width: 755px;
-    height: 458px;
     display: flex;
     justify-content: center;
     align-items: center;

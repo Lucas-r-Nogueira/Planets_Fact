@@ -7,13 +7,13 @@ export default function Information(props){
         <>
             <div className={styles.container__information}>
                 <div className={styles.container__information_title}>
-                    <h1>Neptune</h1>
+                    <h1>{props.name}</h1>
                 </div>
                 <div className={styles.container__information_text}>
-                    <p>Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.</p>
+                    <p>{props.Information}</p>
                 </div>
                 <div className={styles.container__information_wikipediaTitle}>
-                    <p>Source : <a href="">Wikipedia</a></p>
+                    <p>Source : <a href={props.wiki}>Wikipedia</a></p>
                 </div>
                 <Buttons/>
             </div>
