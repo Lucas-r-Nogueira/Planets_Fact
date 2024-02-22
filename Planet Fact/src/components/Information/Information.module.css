@@ -1,13 +1,15 @@
 .container__information{
     width: 100%;
-    height: 100%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .container__information_title{
-    color: #ffffff;
+    color: #ffffff; 
+        animation: backInRight;
+    animation-duration: 2s;
 }
 
 .container__information_title h1{
@@ -39,3 +41,10 @@
     margin: 0 5px;
     font-weight: bold;
 }
+
+
+/* @media (max-width:1250px) {
+.container__information{
+
+    
+} */

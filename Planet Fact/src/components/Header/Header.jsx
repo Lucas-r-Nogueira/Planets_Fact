@@ -1,8 +1,11 @@
 import styles from "./Header.module.css";
 
 
+export default function Header({ numberPlanet }) {
 
-export default function Header(props) {
+  const handleClick = (numeroPlaneta) => {
+    numberPlanet(numeroPlaneta);
+  }
 
   return (
     <>
@@ -13,28 +16,28 @@ export default function Header(props) {
         <div className={styles.container__header_nav}>
           <ul>
             <li>
-              <a href="">Mercury</a>
+              <a onClick={()=> handleClick(0)}>Mercury</a>
             </li>
             <li>
-              <a href="">Venus</a>
+              <a onClick={()=> handleClick(1)}>Venus</a>
             </li>
             <li>
-              <a >Earth</a>
+              <a onClick={()=> handleClick(2)}>Earth</a>
             </li>
             <li>
-              <a href="">Mars</a>
+              <a onClick={()=> handleClick(3)}>Mars</a>
             </li>
             <li>
-              <a href="">Jupiter</a>
+              <a onClick={()=> handleClick(4)}>Jupiter</a>
             </li>
             <li>
-              <a href="">Saturn</a>
+              <a onClick={()=> handleClick(5)}>Saturn</a>
             </li>
             <li>
-              <a href="">Uranus</a>
+              <a onClick={()=> handleClick(6)}>Uranus</a>
             </li>
             <li>
-              <a href="">Neptune</a>
+              <a onClick={()=> handleClick(7)}>Neptune</a>
             </li>
           </ul>
         </div>

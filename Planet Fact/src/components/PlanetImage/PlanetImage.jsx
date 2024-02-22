@@ -1,5 +1,7 @@
 import React from 'react';
 import style from './PlanetImage.module.css'
+import 'animate.css';
+
 export default function PlanetImage(props){
     const [img, setImg] = React.useState(null);
 
@@ -9,7 +11,7 @@ export default function PlanetImage(props){
 
     return (
         <>
-            <div className={style.container__planetImage}>
+            <div className={`${style.container__planetImage} animate__tada`}>
                 <img src={img} alt={`Planet ${props.planetName}`}/>
             </div>
         </>

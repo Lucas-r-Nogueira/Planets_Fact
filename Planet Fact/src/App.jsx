@@ -4,11 +4,15 @@ import Information from './components/Information/Information';
 import PlanetImage from './components/PlanetImage/PlanetImage';
 import PlusInformation from './components/PlusInformation/PlusInformation';
 import Footer from './components/Footer/Footer';
+import React, { useState } from 'react';
+import Buttons from './components/Buttons/Button';
 
-export default function App(props) {
+export default function App() {
 
-    const aoClicarLink = (numero) => {
-        console.log(`Número clicado: ${numero}`);
+    const  [itemSelecionado,setItemSelecionado] = useState(0);
+
+    const numberPlanet = (numeroPlaneta) => {
+        setItemSelecionado(numeroPlaneta);
     };
 
     const planet = [
@@ -96,14 +100,22 @@ export default function App(props) {
     ]
     return (
         <>
-            <Header/>
+            <Header numberPlanet={numberPlanet}/>
             <div className="container__body">
-                <PlanetImage planetImg={planet[1].imgPlanet}/>
+                <PlanetImage planetImg={planet[itemSelecionado].imgPlanet}/>
                 <div className="container__body_information">
-                    <Information name={planet[1].name} Information={planet[1].information} wiki={planet[1].wikipedia}/>
+                    <Information 
+                        name={planet[itemSelecionado].name} 
+                        Information={planet[itemSelecionado].information} 
+                        wiki={planet[itemSelecionado].wikipedia}/>
+                <Buttons/>
                 </div>
             </div>
-            <PlusInformation rotationTime={planet[1].rotationTime} revolutionTime={planet[1].revolutionTime} radius={planet[1].radius} averageTemp={planet[1].averageTemp}/>
+            <PlusInformation 
+                rotationTime={planet[itemSelecionado].rotationTime} 
+                revolutionTime={planet[itemSelecionado].revolutionTime} 
+                radius={planet[itemSelecionado].radius} 
+                averageTemp={planet[itemSelecionado].averageTemp}/>
             <Footer/>
         </>
     );
