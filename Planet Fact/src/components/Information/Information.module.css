@@ -43,8 +43,15 @@
 }
 
 
-/* @media (max-width:1250px) {
-.container__information{
+@media (max-width:1250px) {
+    .container__information{
+        width: 35%;
+        height: 50%;
+    }
+}
 
-    
-} */
+@media (max-width:750px) {
+    .container__information{
+        width: 80%;
+    }
+}

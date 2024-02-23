@@ -12,6 +12,9 @@
 }
 
 @media (max-width:1250px) {
+    .container__planetImage{
+        width: 100%;
+    }
     .container__planetImage img{
         height: 300px;
     }   

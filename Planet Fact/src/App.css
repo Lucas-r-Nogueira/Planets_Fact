@@ -21,7 +21,16 @@
     }
 
     .container__body_information{
-        width: 70%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
 }
 
+
+@media (max-width:750px) {
+    .container__body_information{
+        flex-direction: column;
+        align-items: center;
+    }
+}

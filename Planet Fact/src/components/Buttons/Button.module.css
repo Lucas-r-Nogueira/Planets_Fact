@@ -1,6 +1,6 @@
 .container__button{
     width: 100%;
-    height: 190px;
+    height: 250px;
     display: flex;
     flex-direction: column;
 }
@@ -38,9 +38,9 @@
 
 @media (max-width:1250px) {
     .container__button{
-        flex-direction: row;
+        height: 100%;
+        width: 35%;
         gap: 20px;
-        height: 200px;
     }
 
     .container__button .button{
@@ -54,5 +54,7 @@
     .container__button{
         flex-direction: column;
         gap: 10px;
+        height: 300px;
+        width: 80%;
     }
 }
