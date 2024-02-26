@@ -1,17 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from "./Header.module.css";
 import 'hamburgers/dist/hamburgers.css';
 import '../../assets/styles/hamburguers.css';
 
 
 export default function Header({ numberPlanet }) {
-
-  const [menuAberto, setMenuAberto] = useState(false);
-
-  const toggleMenu = () => {
-    setMenuAberto(!menuAberto);
-
-  };
 
   const handleClick = (numeroPlaneta) => {
     numberPlanet(numeroPlaneta);
@@ -24,11 +17,7 @@ export default function Header({ numberPlanet }) {
           <h1>The Planets</h1>
         </div>
         <div className={styles.container__header_nav}>
-          <button className={`hamburger hamburger--spin ${menuAberto ? 'is-active' : ''}`} type="button" onClick={toggleMenu}>
-            <span className="hamburger-box">
-              <span className="hamburger-inner"></span>
-            </span>
-          </button>
+
           <ul>
             <li>
               <a onClick={() => handleClick(0)}>Mercury</a>
