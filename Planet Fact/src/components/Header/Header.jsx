@@ -1,8 +1,5 @@
-import React from 'react';
+import React,{useState} from 'react';
 import styles from "./Header.module.css";
-import 'hamburgers/dist/hamburgers.css';
-import '../../assets/styles/hamburguers.css';
-
 
 export default function Header({ numberPlanet }) {
 
@@ -10,14 +7,24 @@ export default function Header({ numberPlanet }) {
     numberPlanet(numeroPlaneta);
   }
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <div className={styles.container__header}>
         <div className={styles.container__header_logo}>
           <h1>The Planets</h1>
         </div>
-        <div className={styles.container__header_nav}>
-
+          <div className={styles.burger__icon} onClick={toggleMenu}>
+            <div className={styles.bar}></div>
+            <div className={styles.bar}></div>
+            <div className={styles.bar}></div>
+          </div>
+        <div className={`${styles.container__header_nav} ${isOpen ? 'open' : ''}`}>
           <ul>
             <li>
               <a onClick={() => handleClick(0)}>Mercury</a>
