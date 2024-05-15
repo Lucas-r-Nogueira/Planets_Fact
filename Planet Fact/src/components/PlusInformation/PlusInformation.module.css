@@ -54,5 +54,15 @@
     .container__info p:nth-child(2){
         font-size: 27px;
     }
+}
 
+
+@media (max-width:660px) {
+    .container__info p:first-child{
+        font-size: 12px;
+    }
+
+    .container__info p:nth-child(2){
+        font-size: 20px;
+    }
 }

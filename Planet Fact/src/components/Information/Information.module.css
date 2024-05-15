@@ -8,7 +8,7 @@
 
 .container__information_title{
     color: #ffffff; 
-        animation: backInRight;
+    animation: backInRight;
     animation-duration: 2s;
 }
 
@@ -46,12 +46,20 @@
 @media (max-width:1250px) {
     .container__information{
         width: 35%;
-        height: 50%;
+        height: 40%;
     }
 }
 
 @media (max-width:750px) {
     .container__information{
         width: 80%;
+        height: 45%;
+    }
+    .container__information_title h1{
+        font-size: 55px;
+    }
+
+    .container__information_text p{
+        font-size: 14px;
     }
 }

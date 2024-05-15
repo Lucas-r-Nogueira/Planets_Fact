@@ -11,6 +11,7 @@ export default function Header({ numberPlanet }) {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    console.log(isOpen);
   };
 
   return (
@@ -24,31 +25,31 @@ export default function Header({ numberPlanet }) {
             <div className={styles.bar}></div>
             <div className={styles.bar}></div>
           </div>
-        <div className={`${styles.container__header_nav} ${isOpen ? 'open' : ''}`}>
+        <div className={`${styles.container__header_nav} ${isOpen ? styles.open : styles.close}`}>
           <ul>
-            <li>
-              <a onClick={() => handleClick(0)}>Mercury</a>
+            <li onClick={() => handleClick(0)}>
+              <a>Mercury</a>
             </li>
-            <li>
-              <a onClick={() => handleClick(1)}>Venus</a>
+            <li onClick={() => handleClick(1)}>
+              <a>Venus</a>
             </li>
-            <li>
-              <a onClick={() => handleClick(2)}>Earth</a>
+            <li onClick={() => handleClick(2)}>
+              <a>Earth</a>
             </li>
-            <li>
-              <a onClick={() => handleClick(3)}>Mars</a>
+            <li onClick={() => handleClick(3)}>
+              <a>Mars</a>
             </li>
-            <li>
-              <a onClick={() => handleClick(4)}>Jupiter</a>
+            <li onClick={() => handleClick(4)}>
+              <a>Jupiter</a>
             </li>
-            <li>
-              <a onClick={() => handleClick(5)}>Saturn</a>
+            <li onClick={() => handleClick(5)}>
+              <a>Saturn</a>
             </li>
-            <li>
-              <a onClick={() => handleClick(6)}>Uranus</a>
+            <li onClick={() => handleClick(6)}>
+              <a>Uranus</a>
             </li>
-            <li>
-              <a onClick={() => handleClick(7)}>Neptune</a>
+            <li onClick={() => handleClick(7)}>
+              <a>Neptune</a>
             </li>
           </ul>
         </div>
