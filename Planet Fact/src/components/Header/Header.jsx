@@ -4,6 +4,7 @@ import styles from "./Header.module.css";
 export default function Header({ numberPlanet }) {
 
   const handleClick = (numeroPlaneta) => {
+    toggleMenu();
     numberPlanet(numeroPlaneta);
   }
 
@@ -11,7 +12,6 @@ export default function Header({ numberPlanet }) {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen);
   };
 
   return (

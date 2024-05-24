@@ -202,6 +202,11 @@ hr{
         margin: 0 20px;
     }
 
+    .container__header_nav ul li:hover{
+        cursor: pointer;
+        background-color: #080827;
+    }
+
     /* Menu hambuerguer */
 
     .close{

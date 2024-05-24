@@ -17,7 +17,7 @@ export default function Button({ textInformations }) {
                     <p className={styles.button__number}>02</p>
                     <p className={styles.button__text}>Internal Structure</p>
                 </div>
-                <div className={styles.button} onClick={() => handleClick("informationGeology","imgPlanet")}>
+                <div className={styles.button} onClick={() => handleClick("informationGeology","surfaceGeology")}>
                     <span className={styles.button__number}>03</span>
                     <span className={styles.button__text}>Surface Geology</span>
                 </div>

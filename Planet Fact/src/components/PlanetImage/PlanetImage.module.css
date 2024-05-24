@@ -1,3 +1,11 @@
+@keyframes easeFrame{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 .container__planetImage{
     width: 600px;
@@ -8,6 +16,10 @@
 
 .container__planetImage img{
     height: 400px;
+}
+
+.animation{
+    animation: easeFrame 2s alternate;
 }
 
 
